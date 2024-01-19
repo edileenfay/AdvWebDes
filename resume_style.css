@@ -1,63 +1,68 @@
-div {
-    width: auto;
-    margin: 400px;
-   
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:10px;
+    padding:0;
+    font-size: 16px;
+    
 }
 
+.container {
+    margin: 10px;
+
+} 
+
 img {
-    width : 1000px;
-    height: 1000px;
-    
+    max-width: 100%;
+    height: auto;
+    display:block;
+    margin: 0 auto;
+    max-height: 25vh;
+    padding: 10px;
 
 
 }
 button {
-    size: 500px;
+    padding: 8px;
+    font-size: 14px;
 
 }
 
 table {
     background-color: rgb(156, 235, 175);
     border-collapse:collapse;
-    width: 4000px;
-    height: auto;
-    border-spacing: 30px;
+    width: 50%;
+    margin-top: 10px;
 }
 
-p {
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+p, h1, h2, h3, h4, li {
+    margin: 10px;
+    padding-left: 10px;
 }
 h1 {
-    font-size: 150px;
-    text-align: left;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
         
 }
 
 h2{
-    font-size: 90px;
-    text-align:left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-td {
-    text-align: center;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
+    font-size: 20px;
 
 }
+
 h3, li {
-    font-size: 60px;
-    text-align:center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }
  
 h4 {
-    font-size: 60px;
-    text-align: left;
+    font-size: 16px;
+    margin-top: 3px;
 }
 
+@media only screen and(max-width: 768px){
 
+    img{
+        max-height: 50vh;
+    }
+    table{
+        width: 100%
+    }
+}
